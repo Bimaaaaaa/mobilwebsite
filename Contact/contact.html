@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Bootstrap Contact Form - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+	<nav class="navbar sticky-top bg-body-tertiary">
+		<div class="logo-container">
+		  <img src="image/B Logo Design.png" alt="Logo" class="logo-image">
+		  <h6 class="logo-title">Bee Car's</h6>
+		</div>
+		  
+		  <form class="d-flex" role="search">
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-dark" type="submit">Search</button>
+		  </form>
+		</div>
+	  </nav>
+    <div class="container contact">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="contact-info">
+				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+				<h2>Kontak Kami</h2>
+				<h5>Senang Mendengarkan Keluh Kesah Anda</h5>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="fname">First Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Last Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Alamat Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Pesan:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				  </div>
+				</div>
+
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Kirim</button>
+                    <form action="..//index.html" method="GET">
+                        <div class="text-right">
+                          <button type="submit" class="btn btn-default">Kembali</button>
+                        </div>
+                      </form>
+
+				  </div>
+				</div>
+
+              
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		</script>
+</body>
+</html>

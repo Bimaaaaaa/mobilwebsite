@@ -1,0 +1,16 @@
+.logo-image {
+    width: 50px; /* Atur lebar sesuai dengan kebutuhan */
+    height: auto; /* Biarkan tinggi otomatis menyesuaikan dengan lebar */
+    margin-right: 10px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
